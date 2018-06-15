@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="d5mxuT" name="JUCE Terrain" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.JUCETerrain" includeBinaryInAppConfig="1"
+              jucerVersion="4.3.1" companyName="cthfvrl">
+  <MAINGROUP id="JY7AHe" name="JUCE Terrain">
+    <GROUP id="{18961A68-4375-09CF-3781-3B0FEDBA2AE7}" name="Source">
+      <FILE id="lzZJZQ" name="Etc.cpp" compile="1" resource="0" file="Source/Etc.cpp"/>
+      <FILE id="lLjT8j" name="Etc.h" compile="0" resource="0" file="Source/Etc.h"/>
+      <FILE id="Brys6n" name="Inter.h" compile="0" resource="0" file="Source/Inter.h"/>
+      <FILE id="gVbqvb" name="PerlinNoise.cpp" compile="1" resource="0" file="Source/PerlinNoise.cpp"/>
+      <FILE id="iH3NCt" name="PerlinNoise.h" compile="0" resource="0" file="Source/PerlinNoise.h"/>
+      <FILE id="IiNacb" name="ContentComponent.cpp" compile="1" resource="0"
+            file="Source/ContentComponent.cpp"/>
+      <FILE id="GNce3k" name="ContentComponent.h" compile="0" resource="0"
+            file="Source/ContentComponent.h"/>
+      <FILE id="DFrppH" name="Shape.cpp" compile="1" resource="0" file="Source/Shape.cpp"/>
+      <FILE id="Wzttff" name="Shape.h" compile="0" resource="0" file="Source/Shape.h"/>
+      <FILE id="qW8Y1w" name="Skin.cpp" compile="1" resource="0" file="Source/Skin.cpp"/>
+      <FILE id="bM43Oq" name="Skin.h" compile="0" resource="0" file="Source/Skin.h"/>
+      <FILE id="NtDOJE" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="K2eyRC" name="MainWindow.cpp" compile="1" resource="0" file="Source/MainWindow.cpp"/>
+      <FILE id="bGlQKP" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
+      <FILE id="P8lQta" name="ControlsOverlay.cpp" compile="1" resource="0"
+            file="Source/ControlsOverlay.cpp"/>
+      <FILE id="q3jCKg" name="ControlsOverlay.h" compile="0" resource="0"
+            file="Source/ControlsOverlay.h"/>
+    </GROUP>
+    <FILE id="Av6mUr" name="icon.png" compile="0" resource="1" file="icon.png"/>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015" smallIcon="Av6mUr" bigIcon="Av6mUr">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="JUCE Terrain"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="JUCE Terrain"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_opengl" path="..\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="..\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="..\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="..\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="..\JUCE\modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

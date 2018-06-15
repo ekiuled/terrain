@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2015
+Project("{CA0D7DD2-A3C7-C944-127D-7C30C09E4FA2}") = "JUCE Terrain", "JUCE Terrain.vcxproj", "{A73E00D6-EE46-47FA-E978-B402BF82E88B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A73E00D6-EE46-47FA-E978-B402BF82E88B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A73E00D6-EE46-47FA-E978-B402BF82E88B}.Debug|Win32.Build.0 = Debug|Win32
+		{A73E00D6-EE46-47FA-E978-B402BF82E88B}.Release|Win32.ActiveCfg = Release|Win32
+		{A73E00D6-EE46-47FA-E978-B402BF82E88B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
