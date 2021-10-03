@@ -113,7 +113,7 @@ void PerlinNoise::setOctaves(int octaves) {
 void PerlinNoise::permutate() {
 	for (int i = 255; i >= 0; --i) {
 		int j = rand() % (i + 1);
-		swapVariables(p[i], p[j]);
+		std::swap(p[i], p[j]);
 	}
 }
 

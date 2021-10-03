@@ -272,8 +272,8 @@ void Shape::genData(GLfloat *&vertices, GLuint *&indices, int &verticesCount, in
 			tempIndices[i * (width - 1) * 6 + j + 5] = (i + 1) * width + (j / 6);
 		}
 
-	swapVariables(tempIndices, indices);
-	swapVariables(tempVertices, vertices);
+	std::swap(tempIndices, indices);
+	std::swap(tempVertices, vertices);
 	indicesCount = tempIndicesCount, verticesCount = tempVerticesCount;
 	w = width, d = depth;
 	tempIndicesCount = 0, tempVerticesCount = 0;
@@ -283,10 +283,10 @@ void Shape::genData(GLfloat *&vertices, GLuint *&indices, int &verticesCount, in
 }
 
 void Shape::swapData() {
-	swapVariables(_vertices, _backVertices);
-	swapVariables(_indices, _backIndices);
-	swapVariables(_verticesCount, _backVerticesCount);
-	swapVariables(_indicesCount, _backIndicesCount);
+	std::swap(_vertices, _backVertices);
+	std::swap(_indices, _backIndices);
+	std::swap(_verticesCount, _backVerticesCount);
+	std::swap(_indicesCount, _backIndicesCount);
 
 	freeData(_backVertices, _backIndices);
 }
@@ -313,7 +313,7 @@ Matrix3D<float> Shape::getProjectionMatrix() {
 
 Matrix3D<float> Shape::getViewMatrix() {
 	Matrix3D<float> view;
-	return view.rotated(Vector3D<float>(0.5f, 0.0f, 0.0f));
+	return view.rotation(Vector3D<float>(0.5f, 0.0f, 0.0f));
 }
 
 Matrix3D<float> Shape::getTransMatrix() {
